@@ -112,7 +112,27 @@
             });
         });
 
-	});
+    });
+    
+    /* ------------------------------------------------------------------------ */
+						/* ACCORDIAN ACTIVE CLASS
+						/* ------------------------------------------------------------------------ */
+						
+						jQuery('#accordion2 .panel-title').click(function(e) { 
+							jQuery(this).toggleClass('active');
+							jQuery(this).parent(".panel-heading").parent(".panel-default").siblings(".panel-default").find('.panel-title').removeClass('active');
+                        });
+                        
+                        /* ------------------------------------------------------------------------ */
+						/* FOR ACCORDIAN2 UP AND DOWN ARROW
+						/* ------------------------------------------------------------------------ */
+						jQuery('#accordion2 .panel-title a').click(function(e) { 
+							jQuery(this).toggleClass('active');
+							jQuery(this).parent().find('i.float-right').toggleClass('fa-angle-up');
+							jQuery(this).parent().find('i.float-right').toggleClass('fa-angle-down');
+							jQuery(this).parent(".panel-title").parent(".panel-heading").parent(".panel-default").siblings(".panel-default").find('.panel-title a i.pull-right').removeClass('fa-angle-up');
+							jQuery(this).parent(".panel-title").parent(".panel-heading").parent(".panel-default").siblings(".panel-default").find('.panel-title a i.pull-right').addClass('fa-angle-down');
+						});
 	
 	// WOW JS
 	$(window).on ('load', function (){
@@ -131,6 +151,8 @@
 	// Preloader
 	$(window).on('load', function() {
 		$('.preloader').addClass('preloader-deactivate');
-	});
+    });
+    
+
 
 }(jQuery));
