@@ -1032,6 +1032,7 @@ Header Area CSS
   }
   .sahha-responsive-nav .mean-container a.meanmenu-reveal {
     color: #121521;
+    padding-top: 25px;
   }
   .sahha-responsive-nav .mean-container a.meanmenu-reveal span {
     background: #121521;
@@ -1044,7 +1045,7 @@ Header Area CSS
   .sahha-responsive-nav .others-options {
     position: absolute;
     right: 55px;
-    top: -2px;
+    top: 26px;
   }
   .sahha-responsive-nav .others-options .btn {
     display: none;
@@ -1663,7 +1664,11 @@ Doctor Area CSS
 
 .doctor-slides.owl-theme .owl-nav [class*=owl-].owl-next {
   left: auto;
-  right: -60px;
+  right: 10px;
+}
+.doctor-slides.owl-theme .owl-nav [class*=owl-].owl-prev {
+  right: auto;
+  left: 10px;
 }
 
 /*================================================
@@ -2031,6 +2036,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009cde', end
   margin-bottom: 0;
   padding-bottom: 0;
 }
+
+@media (max-width: 575px) {
+ .ftr-bg-mobile{
+   background-color: #009cde;
+ }
+  }
 
 .copyright-area {
   text-align: center;
