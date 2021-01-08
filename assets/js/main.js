@@ -70,11 +70,11 @@
         
         // Doctor Slides
 		$('.doctor-slides').owlCarousel({
-			loop: true,
+			loop: false,
 			nav: true,
 			dots: false,
 			autoplayHoverPause: true,
-            autoplay: true,
+            autoplay: false,
             margin: 30,
             navText: [
                 "<i class='far fa-angle-left'></i>",
@@ -88,10 +88,10 @@
                     items: 2,
                 },
                 768: {
-                    items: 3,
+                    items: 2,
                 },
                 1200: {
-                    items: 4,
+                    items: 2,
 				}
             }
         });
