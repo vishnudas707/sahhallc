@@ -3297,6 +3297,79 @@ form img.loader {
 	text-align: center;
 	
 }
+
+.ppe-product { border: 1px solid #edeff2; border-radius: 2px; width: 100%; margin-bottom: 30px !important; }
+
+.ppe-img-block { overflow: hidden; display: block; }
+
+.ppe-product .ppe-img-block { margin-bottom: 15px; position: relative; }
+
+.ppe-product .ppe-img-block img { width: 100%; height: auto; position: relative; -webkit-transition: all ease-out 0.3s; transition: all 0.3s; }
+
+.ppe-product .ppe-img-block img:hover { -webkit-transform: scale(1.1); -ms-transform: scale(1.1); transform: scale(1.1); }
+
+.ppe-product .ppe-img-block:after { content: ""; position: absolute; bottom: 0; left: 15px; width: 0; height: 0; border-style: solid; border-width: 0 15px 15px 15px; border-color: transparent transparent #FFF transparent; }
+
+.ppe-product-title { position: relative; display: block; font-size: 16px; line-height: 20px;  color: #262626;  margin: 0 15px 10px 15px; cursor: pointer;  padding-bottom: 5px; overflow: hidden; text-overflow: ellipsis; }
+
+a.ppe-product-title:hover { color: #0077c8; }
+
+#mains {
+  margin: 50px 0 0 0;
+}
+
+#mains #faq .card {
+  margin-bottom: 10px;
+  border: 0;
+}
+
+#mains #faq .card .card-header {
+  border: 0;
+  -webkit-box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+          box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+  border-radius: 2px;
+  padding: 0;
+}
+#mains #faq .card .card-header .btn {border-radius:2px;}
+#mains #faq .card .card-header .btn-header-link {
+  color: #fff;
+  display: block;
+  text-align: left;
+  background: #FFE472;
+  color: #222;
+  padding: 20px;
+}
+
+#mains #faq .card .card-header .btn-header-link:after {
+  content: "\f107";
+  font-family: 'Font Awesome 5 Pro';
+  font-weight: 900;
+  float: right;
+}
+
+#mains #faq .card .card-header .btn-header-link.collapsed {
+  background: #0077c8;
+  color: #fff;
+}
+
+#mains #faq .card .card-header .btn-header-link.collapsed:after {
+  content: "\f106";
+}
+
+#mains #faq .card .collapsing {
+  background: #fff;
+  line-height: 30px;
+}
+
+#mains #faq .card .collapse {
+  border: 0;
+}
+
+#mains #faq .card .collapse.show {
+  background: #fff;
+  line-height: 30px;
+  color: #222;
+}
     
 
        
